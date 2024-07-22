@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>폼</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="#home">본문 바로가기</a>
+        <ul>
+            <li><a href="1.html">텍스트 tag</a></li>
+            <li><a href="2.html">목록 tag</a></li>
+            <li><a href="3.html">표 tag</a></li>
+            <li><a href="4.html">이미지와 링크 tag</a></li>
+            <li><a href="5.html">폼 tag</a></li>
+        </ul>
+
+        <h1 id="home">폼 서버에 보내기위한 tag</h1>
+        <form>
+            <label>레이블 요소</label>
+        </form>
+        <h2>fieldset과 legend</h2>
+        <form>
+            <fieldset>
+                <legend>폼의 영역분리</legend>
+                <label>폼의 데이터들의 영역을 분리하는 tag</label>
+            </fieldset>
+        </form>
+        <h2>사용자 입력 tag input</h2>
+        <form>
+            <fieldset>
+                <legend>편집창</legend>
+                <label for="txt">텍스트 편집창</label>
+                <input type="text" id="txt">
+                <br>
+                <label for="pw">암호입력</label>
+                <input type="password" id="pw">
+                <br>
+                <label for="find">검색창</label>
+                <input type="search" id="find">
+                <br>
+                <label for="web">웹주소</label>
+                <input type="url" id="web">
+                <br>
+                <label for="e-m">이매일</label>
+                <input type="email" id="e-m">
+                <br>
+                <label for="ph">전화번호</label>
+                <input type="tel" id="ph">
+                <br>
+                <label for="num">숫자</label>
+                <input type="number" id="num">
+            </fieldset>
+            <fieldset>
+                <legend>사용자 조작 컨트롤</legend>
+                <label for="sld">슬라이더</label>
+                <input type="range" min="0" max="10" id="sld">
+                <br>
+                <label for="rd">라디오버튼</label>
+                <label><input type="radio" name="direction" value="east">동</label>
+                <label><input type="radio" name="direction" value="west">서</label>
+                <label><input type="radio" name="direction" value="south">남</label>
+                <label><input type="radio" name="direction" value="north">북</label>
+                <br>
+                <label for="chb">체크상자</label>
+                <label><input type="checkbox" name="direct" value="up">상</label>
+                <label><input type="checkbox" name="direct" value="down">하</label>
+                <br>
+                <label for="colvalue">색상 선택 상자</label>
+                <input type="color" id="colvalue" value="#ff0000">
+                <br>
+                <label for="datevalue">날짜선택</label>
+                <input type="date" id="datevalue">
+                <br>
+                <label for="hourvalue">시간선택</label>
+                <input type="time" id="hourvalue">
+                <br>
+                <label for="btn">버튼종류</label>
+                <input type="submit">
+                <input type="reset">
+                <input type="image" src="images/peach.jpeg" alt="복숭아" title="이미지">
+                <input type="button" value="클릭하기" title="인풋">
+                <button>
+                    <img src="images/peach.jpeg" alt="복숭아" title="이미지">
+                </button>
+                <br>
+                <label for="upload">파일 업로드</label>
+                <input type="file" id="upload">
+            </fieldset>
+            <fieldset>
+                <legend>스크린리더에게 영향을 줄 수 있는 input 속성들</legend>
+                <label for="auto">자동 초점이동</label>
+                <input type="text" id="auto" autofocus>
+                <br>
+                <label for="holder">텍스트창 흰트 보이기</label>
+                <input type="text" id="holder" placeholder="흰트는 없습니다.">
+                <br>
+                <label for="only">수정 불가능한 편집창</label>
+                <input type="text" id="only" readonly>
+                <br>
+                <label for="reqd">필수 입력란</label>
+                <input type="text" id="reqd" required>
+            </fieldset>
+        </form>
+    </body>
+</html>
