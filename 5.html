@@ -11,7 +11,7 @@
             <li><a href="2.html">목록 tag</a></li>
             <li><a href="3.html">표 tag</a></li>
             <li><a href="4.html">이미지와 링크 tag</a></li>
-            <li><a href="5.html">폼 tag</a></li>
+            <li><a href="5.html" title="자동 초점이동 편집창으로 이동되어 열림">폼 tag</a></li>
         </ul>
 
         <h1 id="home">폼 서버에 보내기위한 tag</h1>
@@ -79,9 +79,14 @@
                 <input type="reset">
                 <input type="image" src="images/peach.jpeg" alt="복숭아" title="이미지">
                 <input type="button" value="클릭하기" title="인풋">
+                <br>
+                <label for="allbutton">button tag를 이용한 버튼</label>
+                <button type="submit">제출</button>
+                <button type="reset">초기화</button>
                 <button>
                     <img src="images/peach.jpeg" alt="복숭아" title="이미지">
                 </button>
+                <button type="button" value="click" title="button tag">클릭하기</button>
                 <br>
                 <label for="upload">파일 업로드</label>
                 <input type="file" id="upload">
@@ -100,6 +105,70 @@
                 <label for="reqd">필수 입력란</label>
                 <input type="text" id="reqd" required>
             </fieldset>
+            <fieldset>
+                <legend>데이터를 나열해서 보여주기</legend>
+                <label for="combo">콤보상자 종류</label>
+                <select id="combo">
+                    <option value="n1">사과</option>
+                    <option value="n2">딸기</option>
+                    <option value="n3">바나나</option>
+                    <option value="n4">복숭아</option>
+                    <option value="n5">수박</option>
+                    <option value="n6">포도</option>
+                    <option value="n7">망고</option>
+                </select>
+                <label for="combo1">여러항목선택상자</label>
+                <select id="combo1" multiple>
+                    <option value="n1">사과</option>
+                    <option value="n2">딸기</option>
+                    <option value="n3">바나나</option>
+                    <option value="n4">복숭아</option>
+                    <option value="n5">수박</option>
+                    <option value="n6">포도</option>
+                    <option value="n7">망고</option>
+                </select>
+                <label for="combo2">그룹별로 묶여있는 콤보상자</label>
+                <select id="combo2">
+                    <optgroup label="과일">
+                        <option value="n1">사과</option>
+                        <option value="n2">딸기</option>
+                        <option value="n3">바나나</option>
+                        <option value="n4">복숭아</option>
+                        <option value="n5">수박</option>
+                        <option value="n6">포도</option>
+                        <option value="n7">망고</option>
+                    </optgroup>
+                    <optgroup label="채소">
+                        <option value="n10">상추</option>
+                        <option value="n11">고추</option>
+                        <option value="n12">배추</option>
+                        <option value="n13">양배추</option>
+                        <option value="n14">호박</option>
+                    </optgroup>
+                </select>
+                <label for="datelist">편집창 형태의 콤보박스</label>
+                <input type="text" id="datelist" list="datamov">
+                <datalist id="datamov">
+                    <option value="n1" label="apple"></option>
+                    <option value="n2" label="strawberry"></option>
+                    <option value="n3" label="banana"></option>
+                    <option value="n4" label="peach"></option>
+                    <option value="n5" label="watermelon"></option>
+                    <option value="n6" label="grape"></option>
+                    <option value="n7" label="mango"></option>
+                </datalist>
+                <br>
+                <label for="textbox">여러줄을 입력하는 편집창></label>
+                <br>
+                <textarea cols="100" rows="4" id="textbox"></textarea>
+                <br>
+                <label for="prs">진행률</label>
+                <progress id="prs" value="50" max="100"></progress>
+                <br>
+                <label for="mrs">범위 안에서 차지하는 비율</label>
+                <meter value="100" max="10000" min="0" low="10" high="5000" optimum="3000" id="mrs"></meter>
+            </fieldset>
         </form>
+        <p>html복습완료</p>
     </body>
 </html>
